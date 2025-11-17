@@ -7,7 +7,7 @@ const app = new Koa();
 
 app.use(logger());
 
-const applications = ctx => {
+const applications = (ctx:any) => {
   ctx.body = `
   <!DOCTYPE html> <html> <head> <meta name="viewport" content="width=device-width, initial-scale=1"> <style> body, html { height: 100%; margin: 0; } .content { position: absolute; top: 15%; left:25%; background: rgb(0, 0, 0); /* Fallback color */ background: rgba(0, 0, 0, 0.76); /* Black background with 0.5 opacity */ color: #f1f1f1; width: 50%; padding: 20px; } .bg { /* The image used */ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcRqNquWxQHJAPgugDwzXokAU_dQUXzknUTA&usqp=CAU"); /* Full height */ height: 100%; /* Center and scale the image nicely */ background-position: center; background-repeat: no-repeat; background-size: cover; } table { font-family: arial, sans-serif; border-collapse: collapse; width: 100%; } td, th { border: 1px solid #dddddd; text-align: left; padding: 8px; } div.parent { text-align: center; } ul { display: inline-block; text-align: left; }</style>
     </head> <body> <div class="bg"></div>  <div class="content"> <h1 id="home" 
@@ -34,7 +34,7 @@ const applications = ctx => {
   `;
 };
 
-const chess = ctx => {
+const chess = (ctx:any) => {
   ctx.body = `
 <!DOCTYPE html>
 <html>
@@ -1246,7 +1246,7 @@ const chess = ctx => {
     `;
 };
 
-const calculator = ctx => {
+const calculator = (ctx:any) => {
   ctx.body = `
         <html>
     <head>
@@ -1488,7 +1488,7 @@ const calculator = ctx => {
     `;
 };
 
-const maze = ctx => {
+const maze = (ctx:any) => {
   ctx.body = `
 <html lang="en-GB">
     <head>
@@ -2289,7 +2289,7 @@ const maze = ctx => {
     `;
 };
 
-const sass_ = ctx => {
+const sass_ = (ctx:any) => {
   ctx.body = `
 <!DOCTYPE html>
 <html>
@@ -2333,7 +2333,7 @@ body{
     `;
 };
 
-const codepen = ctx => {
+const codepen = (ctx:any) => {
   ctx.body = `
 <!DOCTYPE html>
 <html>
@@ -2392,7 +2392,7 @@ const codepen = ctx => {
 `;
 };
 
-const tilt_maze = ctx => {
+const tilt_maze = (ctx:any) => {
   ctx.body = `
 <!DOCTYPE html>
 <html>
@@ -3369,7 +3369,7 @@ function main(timestamp) {
 `;
 };
 
-const dino = ctx => {
+const dino = (ctx:any) => {
   ctx.body = `
     
 <html>
@@ -6002,7 +6002,7 @@ html[subframe] body {
 `
 };
 
-const solitaire = ctx => {
+const solitaire = (ctx:any) => {
   ctx.body = `
 <html>
 <head>
@@ -7571,7 +7571,7 @@ const solitaire = ctx => {
     `;
 };
 
-const sudoku = ctx => {
+const sudoku = (ctx:any) => {
   ctx.body = `
     <html>
 <head>
@@ -7597,7 +7597,7 @@ body
 {
 margin: 0px;
 padding: 0px;
-background: #E10A04 url('https://raw.githubusercontent.com/aqwertyuiop48/JavaScript-Applications/main/public/sudoku/images/backgroundx.png') repeat-x;
+background: #E10A04 url('https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/sudoku/images/backgroundx.png') repeat-x;
 font-family: Arial;
 color: #FFAEAE;
 font-size: 12px;
@@ -7618,7 +7618,7 @@ font-weight: bold;
 
 #Wrapper
 {
-background: url('https://raw.githubusercontent.com/aqwertyuiop48/JavaScript-Applications/main/public/sudoku/images/background.png') no-repeat top center;
+background: url('https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/sudoku/images/background.png') no-repeat top center;
 min-height: 720px;
 }
 
@@ -7802,7 +7802,7 @@ text-transform: uppercase;
 border: 0px;
 min-width: 162px;
 min-height: 34px;
-background: url('https://raw.githubusercontent.com/aqwertyuiop48/JavaScript-Applications/main/public/sudoku/images/submitBackground.png') repeat-x;
+background: url('https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/sudoku/images/submitBackground.png') repeat-x;
 margin: 8px 0px;
 cursor: pointer;
 }
@@ -7816,7 +7816,7 @@ text-transform: uppercase;
 border: 0px;
 min-width: 28px;
 min-height: 28px;
-background: url('https://raw.githubusercontent.com/aqwertyuiop48/JavaScript-Applications/main/public/sudoku/images/submitSmallBackground.png') repeat-x;
+background: url('https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/sudoku/images/submitSmallBackground.png') repeat-x;
 margin: 8px 0px;
 padding: 2px 16px;
 cursor: pointer;
@@ -7842,7 +7842,7 @@ height: 100%;
 position: absolute;
 top: 0px;
 right: 0px;
-background: url('https://raw.githubusercontent.com/aqwertyuiop48/JavaScript-Applications/main/public/sudoku/images/shade.png') repeat;
+background: url('https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/sudoku/images/shade.png') repeat;
 }
 
 #youWon div
@@ -7881,7 +7881,7 @@ color: #ED823F;
 border: 1px solid #ED823F;
 }
     </style>
-<link rel="shortcut icon" href="https://raw.githubusercontent.com/aqwertyuiop48/JavaScript-Applications/main/public/sudoku/icon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/sudoku/icon.ico" type="image/x-icon" />
 </head>
 <body>
     <div id="Wrapper">
@@ -7903,10 +7903,10 @@ border: 1px solid #ED823F;
                     <br/>
                     <br/>
                     <div id="calculating" style="display: none;">
-                        <img src="https://raw.githubusercontent.com/aqwertyuiop48/JavaScript-Applications/main/public/sudoku/images/iconTime.png" alt="Calculating Clock" /><span class="finishedLabel">Solving puzzles...</span>
+                        <img src="https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/sudoku/images/iconTime.png" alt="Calculating Clock" /><span class="finishedLabel">Solving puzzles...</span>
                     </div>
                     <div role="tab" aria-selected="true" aria-controls="perfResults" tabindex="200" id="finishedCalculating" style="display: none;">
-                        <img src="https://raw.githubusercontent.com/aqwertyuiop48/JavaScript-Applications/main/public/sudoku/images/iconTime.png" alt="Calculating Clock" /><span class="finishedLabel">Finished In:</span>
+                        <img src="https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/sudoku/images/iconTime.png" alt="Calculating Clock" /><span class="finishedLabel">Finished In:</span>
                         <br/>
                         <span id="timeFinished"></span>
                     </div>
@@ -9361,7 +9361,7 @@ addEventListener('DOMContentLoaded', initialize, false);
     `;
 };
 
-const puzzles = ctx => {
+const puzzles = (ctx:any) => {
   ctx.body = `
 <!DOCTYPE html>
 <html>
@@ -9596,11 +9596,11 @@ return this;
 
     <script>
     var images = [
-        { src: 'https://raw.githubusercontent.com/aqwertyuiop48/JavaScript-Applications/main/public/puzzle/img/neeruti.jpg', title: 'Puzzle_1' },
-        { src: 'https://raw.githubusercontent.com/aqwertyuiop48/JavaScript-Applications/main/public/puzzle/img/harju_madise.jpg', title: 'Puzzle_2' },
-        { src: 'https://raw.githubusercontent.com/aqwertyuiop48/JavaScript-Applications/main/public/puzzle/img/rahumae.jpg', title: 'Puzzle_3' },
-        { src: 'https://raw.githubusercontent.com/aqwertyuiop48/JavaScript-Applications/main/public/puzzle/img/kakumae.jpg', title: 'Puzzle_4' },
-        { src: 'https://raw.githubusercontent.com/aqwertyuiop48/JavaScript-Applications/main/public/puzzle/img/kohila.jpg', title: 'Puzzle_5' }
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/neeruti.jpg', title: 'Puzzle_1' },
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/harju_madise.jpg', title: 'Puzzle_2' },
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/rahumae.jpg', title: 'Puzzle_3' },
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/kakumae.jpg', title: 'Puzzle_4' },
+        { src: 'https://raw.githubusercontent.com/sreegithub19/JavaScript-Applications/main/public/puzzle/img/kohila.jpg', title: 'Puzzle_5' }
     ];
     
     $(function () {
@@ -9626,7 +9626,7 @@ return this;
 `;
 };
 
-const tic_tac_toe = ctx => {
+const tic_tac_toe = (ctx:any) => {
   ctx.body = `<!doctype html>
     <html lang="en">
     <head>
@@ -9759,7 +9759,7 @@ document.querySelector('.game--restart').addEventListener('click', handleRestart
     </body>`;
 };
 
-const clock = ctx => {
+const clock = (ctx:any) => {
   ctx.body = `
     
 <!DOCTYPE html>
@@ -9881,7 +9881,7 @@ function drawHand(ctx, pos, length, width){
     ` ;
 };
 
-const hangman = ctx => {
+const hangman = (ctx:any) => {
   ctx.body = `
     <!DOCTYPE html>
 <html lang="en">
@@ -10066,7 +10066,7 @@ startGame()
     ` ;
 };
 
-const virtual_keyboard = ctx => {
+const virtual_keyboard = (ctx:any) => {
   ctx.body = `<!DOCTYPE html>
     <html lang="en">
     <head>
